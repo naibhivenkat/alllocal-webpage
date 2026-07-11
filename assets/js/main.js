@@ -218,7 +218,11 @@ Contact Form
 ==========================================
 */
 
+
 function initializeContactForm() {
+    console.log("EmailJS function loaded");
+
+    emailjs.init("W584rcIlcEPeP4OjS");
 
     const form = document.querySelector(".contact-form");
 
@@ -228,11 +232,25 @@ function initializeContactForm() {
 
         e.preventDefault();
 
-        alert(
-            "Thank you! Your message has been received."
-        );
+        emailjs.sendForm(
+            "service_alllocal",
+            "template_contact",
+            form
+        )
+            .then(() => {
 
-        form.reset();
+                alert("Message sent successfully!");
+
+                form.reset();
+
+            })
+            .catch((error) => {
+
+                console.error(error);
+
+                alert("Failed to send message.");
+
+            });
 
     });
 

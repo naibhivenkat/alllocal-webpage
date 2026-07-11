@@ -1,0 +1,34 @@
+# Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+pubspec.lock
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+
+# Firebase
+.firebase/
+
+# IDE
+android/.settings/
+
+# macOS
+.DS_Store
+
+# IntelliJ / Android Studio
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+.firebaserc
+
+.DS_Store
+.vscode/launch.json

@@ -120,23 +120,24 @@
 ========================================== */
 
 .product-card {
-
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .product-card h3 {
-
-    margin-bottom: 1rem;
-
-    font-size: 1.4rem;
+    width: 100%;
+    text-align: center !important;
+    margin-bottom: 16px;
 }
 
 .product-card p {
-
-    color: var(--text-light);
-
-    line-height: 1.8;
+    text-align: center;
+    max-width: 280px;
+    margin: 0 auto;
 }
+
+
 
 
 /* ==========================================
@@ -254,4 +255,5 @@
 .grid-4 {
 
     grid-template-columns: repeat(4,1fr);
+
 }
